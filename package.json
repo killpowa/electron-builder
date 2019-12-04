@@ -16,7 +16,7 @@
     "docker-images": "docker/build.sh",
     "update-deps": "npm-check-updates -u && node ./scripts/update-deps.js",
     "set-versions": "node test/out/helpers/setVersions.js",
-    "release": "yarn set-versions && cross-env BABEL_ENV=production yarn compile && sh ./__publish.sh && conventional-changelog -p angular -i CHANGELOG.md -s",
+    "release": "yarn set-versions && cross-env BABEL_ENV=production yarn compile",
     "schema": "typescript-json-schema packages/app-builder-lib/tsconfig.json Configuration --out packages/app-builder-lib/scheme.json --noExtraProps --useTypeOfKeyword --strictNullChecks --required && node ./scripts/fix-schema.js",
     "jsdoc": "ts2jsdoc packages/builder-util-runtime packages/builder-util packages/app-builder-lib packages/electron-builder packages/electron-publish",
     "jsdoc2md": "node scripts/jsdoc2md.js",
