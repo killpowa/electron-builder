@@ -1,5 +1,6 @@
 {
   "private": true,
+  "name": "electron-builder",
   "license": "MIT",
   "version": "0.0.1",
   "scripts": {
